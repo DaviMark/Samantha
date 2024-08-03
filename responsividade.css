@@ -1,0 +1,23 @@
+@media screen and (max-width: 1020px){
+
+    .hero{
+        background-image: url(/imagens/responsividade.jpg);
+        height: 102vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .title h1{
+        font-size: 35px;
+    }
+
+    .master_container{
+        padding-top: 60px;
+    }
+
+    .button{
+        font-size: 23px;
+    }
+}

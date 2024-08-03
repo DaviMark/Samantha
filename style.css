@@ -152,3 +152,44 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+
+
+/* Loading */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Previne a rolagem enquanto a tela de carregamento está ativa */
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514); /* Cor da tela de fundo branca com transparência */
+    z-index: 9999; /* Z-index alto para estar acima de todo o conteúdo */
+    display: none; /* Oculta por padrão */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    opacity: 0; /* Começa transparente */
+    transition: opacity 5s ease; /* Transição suave para a opacidade */
+  }
+
+  .overlay.active {
+    display: flex; /* Exibe a tela de carregamento quando a classe active é adicionada */
+    opacity: 1; /* Define opacidade para 100% */
+  }
+
+  .loading {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo do spinner */
+    border-radius: 8px; /* Bordas arredondadas para o spinner */
+  }
+  /*Fim Loading*/
